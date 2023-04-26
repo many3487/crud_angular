@@ -1,20 +1,20 @@
 se esta usando npm install -g @angular/cli
 ng new cliente
 luego y y css
-inicio en la terminal el proyecto ng serve luego aparece un mensaje que dice que si se quiere compartir datos  le decimos que si 
+inicio en la terminal el proyecto ng serve luego aparece un mensaje que dice que si se quiere compartir datos  le decimos que si
 
-se usa bootstrap 
+se usa bootstrap
 npm install bootstrap
 
-en el archivo angular.json en la parte de "styles" aquí vamos a copiar la direccion de "node_modules/bootstrap/dist/css/bootstrap.css" se debe anteponer una coma 
+en el archivo angular.json en la parte de "styles" aquí vamos a copiar la direccion de "node_modules/bootstrap/dist/css/bootstrap.css" se debe anteponer una coma
 
 con el comando: ng g c components/crear-producto
-la g es de generate y la  c es de component 
-estructura del comando ng inicia el comando de angular  luego g de generate, c de component y posteriormente la diracción donde quiero dicho componente 
+la g es de generate y la  c es de component
+estructura del comando ng inicia el comando de angular  luego g de generate, c de component y posteriormente la diracción donde quiero dicho componente
 y se crea otro componente el cual sería: ng g c components/listar-productos
-ahora se debe crear un servicio esto se crea con el comando 
+ahora se debe crear un servicio esto se crea con el comando
 ng g s services/producto
-la s seria para generar un servicio y posteriormente la ruta 
+la s seria para generar un servicio y posteriormente la ruta
 en modelo creo un archivo el cual tendrá como nombre producto.ts
 
 el modelo es para la creación de las tablas
@@ -22,19 +22,21 @@ el modelo es para la creación de las tablas
 
 ruteo:
 en el archivo app-routing.module.ts el cual se encuentra en src este es el que maneja las rutas
-para las rutas lo que se usa es agregar un objeto {path:'',component: nombre} enb este caso cuando el path sea vacio se enviará o se redirigira al componente que se haya configurado 
+para las rutas lo que se usa es agregar un objeto {path:'',component: nombre} enb este caso cuando el path sea vacio se enviará o se redirigira al componente que se haya configurado
 esto se debe configurar en la parte de de: const routes: Routes = [ aqui va el objeto anteriormente creado ];
 
-al crear un componente para poder llamarlo usar el camelcase ya que este reconoce que se esta trayendo una parte de la ruta para que sea redirigido 
+al crear un componente para poder llamarlo usar el camelcase ya que este reconoce que se esta trayendo una parte de la ruta para que sea redirigido
 
 con la linea de código {path: '**' redirectTo: '', pathMatch: 'full'} lo que hago es que todo se redireccione a la carpeta o archivo raiz
-en la pagina https://uigradients.com/ puedo ver los gradients que o quiera  par aplicarlos a las paginas 
+en la pagina https://uigradients.com/ puedo ver los gradients que o quiera  par aplicarlos a las paginas
 
 https://cdnjs.com/libraries/font-awesome
-este me sirve para los iconos de font awesome en la cual se copia el primer link y ese se debe copiar en el index.html que sería el unico 
+este me sirve para los iconos de font awesome en la cual se copia el primer link y ese se debe copiar en el index.html que sería el unico
 ya con esto se uede ingresar a la pagina princupal de https://fontawesome.com/icons en la cual se pueden buscar los iconos
 
+cuando se crea un componente este también crea un archivo css
 
+igual se puede usar  googlefonts
 
 
 
