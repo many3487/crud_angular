@@ -13,6 +13,8 @@ la g es de generate y la  c es de component
 estructura del comando ng inicia el comando de angular  luego g de generate, c de component y posteriormente la diracción donde quiero dicho componente
 y se crea otro componente el cual sería: ng g c components/listar-productos
 ahora se debe crear un servicio esto se crea con el comando
+
+
 ng g s services/producto
 la s seria para generar un servicio y posteriormente la ruta
 en modelo creo un archivo el cual tendrá como nombre producto.ts
@@ -39,7 +41,8 @@ cuando se crea un componente este también crea un archivo css
 igual se puede usar  googlefonts
 
 
-
+también se usa reactive forms
+ReactiveFormsModule esta iria en epp.module.ts y se debe igual inyectar desde imports
 
 funciona con node v19.7.0
 npm version 9.5.0
