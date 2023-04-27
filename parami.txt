@@ -41,4 +41,7 @@ igual se puede usar  googlefonts
 
 
 
+funciona con node v19.7.0
+npm version 9.5.0
+para ejecutar basta con  escribir el comando ng serve
 
