@@ -1,5 +1,12 @@
 se esta usando npm install -g @angular/cli
 ng new cliente
+instalar dependencias con npm i 
+luego se puede poner 
+npm install -g @angular/cli
+
+y de allí ng serve para ejecutar el proyecto
+
+
 luego y y css
 inicio en la terminal el proyecto ng serve luego aparece un mensaje que dice que si se quiere compartir datos  le decimos que si
 
@@ -44,7 +51,71 @@ igual se puede usar  googlefonts
 también se usa reactive forms
 ReactiveFormsModule esta iria en epp.module.ts y se debe igual inyectar desde imports
 
+
+para el caso de las rutas se puede poner / para que se haga referencia a una ruta absoluta
+si no tiene el / es ruta relativa 
+
+
+
+***************************************************************************************
+*****************************formularios reactivos ************************************
+***************************************************************************************
+
+para hacer uso de  reactive forms lo que debo hacer es irme a app.module.ts y aquí se debe importar el modulo esto se debe poner  en la parte de imports como 
+ReactiveFormsModule 
+
+https://angular.io/guide/reactive-forms
+
+***************************************************************************************
+********                            toastr angular              ********** 
+***************************************************************************************
+
+https://www.npmjs.com/package/ngx-toastr
+instalacion 
+npm install ngx-toastr --save
+si no funciona se usa 
+npm install ngx-toastr --legacy-peer-deps
+o 
+npm install ngx-toastr --force
+
+se debe agregar esta linea en el archivo angular.json en la parte de styles 
+  "node_modules/ngx-toastr/toastr.css" // try adding '../' if you're using angular cli before 6
+
+
+para usarlo o importarlo se hace desde el app.modules y se pone 
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+y se agrega en los imports del mismo archivo 
+
+también se debe copiar el tost r
+import { ToastrModule } from 'ngx-toastr';
+y en app modules se pega y en imports se pone 
+ToastrModule.forRoot()
+
+ahora para el uso se inyecta en el constructor 
+
+con las teclas ctrl + . y luego enter se importa el modulo de forma automatica
+
+color verde
+y para imprimir el mensaje se pone this.toastr.success('cuerpo', 'titulo');
+color azul
+y para imprimir el mensaje se pone this.toastr.info('Hello world!', 'Toastr fun!');
+
+
+***************************************************************************************
+**************************     hasta aquí va el frontend     **************************
+***************************************************************************************
+
+
+****************  ahora voy con el backend ****************
+se va a usar node, express y mongo z
+
 funciona con node v19.7.0
 npm version 9.5.0
 para ejecutar basta con  escribir el comando ng serve
+
+
+
+
 
