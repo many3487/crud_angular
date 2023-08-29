@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class ListarProductosComponent {
 
+  constructor(private _productoService: ProductoService ) { }
+  ngOnInit(): void{
+    this.obtenerProductos(); 
+  }
+
+  obtenerProductos(){
+    this._productoService.getProductos().subscribe(data =>{
+      console.log(data);
+      
+    },error =>{
+      console.log(error);
+      
+    })
+  }
 }

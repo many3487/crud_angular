@@ -116,6 +116,13 @@ npm version 9.5.0
 para ejecutar basta con  escribir el comando ng serve
 
 
+para realizar la integración es decir para unir el backend, con el frontend se debe importar en app.module.ts 
+se debe importar un módulo adicional 
 
+se importa 
+import { HttpClientModule } from '@angular/common/http';
 
+y ahora se debe buscar en los imports y poner  HttpClientModule
+HttpClientModule
+esto para que sea importado y usado 
 

@@ -4,6 +4,10 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ProductoService {
+  url ='http://localhost:4000/api/productos/';
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
+  getProductos(): Observable<any> {
+    return this.http.get(this.url);
+  }
 }
